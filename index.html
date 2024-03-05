@@ -92,46 +92,52 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">phylotree.js</a>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a
-              href="#"
-              id="newick-dropdown"
-              class="nav-link dropdown-toggle"
-              role="button"
-              data-toggle="dropdown"
-              >Newick <b class="caret"></b
-            ></a>
-            <div class="dropdown-menu">
-              <a
-                class="dropdown-item"
-                href="#"
-                data-toggle="modal"
-                data-target="#newick_modal"
-                >Input Text</a
-              >
+ <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a
+        href="#"
+        id="newick-dropdown"
+        class="nav-link dropdown-toggle"
+        role="button"
+        data-toggle="dropdown"
+        >Newick <b class="caret"></b
+      ></a>
+      <div class="dropdown-menu">
+        <a
+          class="dropdown-item"
+          href="#"
+          data-toggle="modal"
+          data-target="#newick_modal"
+          >Input Text</a
+        >
 
-							<div class="dropdown-item">
-								<input id="newick_url" name="newick_url" type="url" placeholder="http://www.example.com">
-                <button id="newick_url_btn">Get</button>
-							</div>
+        <!-- Add a select element with three options -->
+        <div class="dropdown-item">
+          <label for="newick_select">Choose a newick file:</label>
+          <select id="newick_select" name="newick_select">
+            <option value="a.nwk">a.nwk</option>
+            <option value="b.nwk">b.nwk</option>
+            <option value="c.nwk">c.nwk</option>
+          </select>
+        </div>
 
-              <a class="dropdown-item" href="#"
-                ><input type="file" id="newick_file"
-              /></a>
-              <div class="dropdown-divider"></div>
-              <a
-                class="dropdown-item"
-                href="#"
-                data-toggle="modal"
-                data-target="#newick_export_modal"
-                >Export</a
-              >
-            </div>
-          </li>
-        </ul>
+        <a class="dropdown-item" href="#"
+          ><input type="file" id="newick_file"
+        /></a>
+        <div class="dropdown-divider"></div>
+        <a
+          class="dropdown-item"
+          href="#"
+          data-toggle="modal"
+          data-target="#newick_export_modal"
+          >Export</a
+        >
+      </div>
+    </li>
+  </ul>
+</div>
 
         <ul class="nav navbar-nav mx-auto">
           <li class="nav-item dropdown">
